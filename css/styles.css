@@ -1,39 +1,56 @@
-*{
+:root {
+    --primary: #D87D4A;
+    --secondary: #101010;
+    --tertiary: #F1F1F1;
+    --quaternary: #FAFAFA;
+    --primary-lighter: #fbaf85;
+}
+* {
     box-sizing: border-box;
 }
-
-body{
+body {
     font-family: 'Manrope', sans-serif;
+    margin: 0;
     min-height: 100vh;
 }
-
 .inner-container {
-    max-height: 1100px;
+    max-width: 1110px;
     height: 100%;
-    margin:0 auto;
-    background-size: contain;
-    background-size: cover;
-    background-repeat: no-repeat;
+    margin: 0 auto;
 }
-
 .out-container {
-    background-color: #0E0E0E;
+    background-color: #191919;
     height: 728px;
 }
-
-
-
-
-
-
-@media only screen and (max-width: 767px) {
-    /* Your CSS styles for small screens go here */
-  }
-
-@media only screen and (max-width: 767px) {
-/* Your CSS styles for small screens go here */
+.hero-banner-section {
+    background-image: url("../assets/home/mobile/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1365px) {
-    /* Your CSS styles for small desktop screens go here */
-  }
+/* Small (sm) */
+@media (min-width: 640px) {
+}
+/* Medium (md) */
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+    .hero-banner-section {
+        background-image: url("../assets/home/tablet/image-header.jpg");
+    }
+}
+/* Large (lg) */
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+}
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    .hero-banner-section {
+        background-image: url("../assets/home/desktop/image-hero.jpg");
+    }
+}
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
+}
